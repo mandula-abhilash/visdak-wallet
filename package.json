@@ -30,6 +30,7 @@
   },
   "peerDependencies": {
     "express": "^4.21.1",
-    "express-async-handler": "^1.2.0"
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.8.2"
   }
 }
