@@ -1,0 +1,35 @@
+{
+  "name": "visdak-wallet",
+  "version": "1.0.0",
+  "description": "Pluggable module for managing plans, wallets, transactions, and subscriptions with multi-gateway support",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Build step skipped as this is a JavaScript project'",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "wallet",
+    "subscriptions",
+    "one-time payments",
+    "plans",
+    "transactions",
+    "stripe",
+    "razorpay",
+    "modular"
+  ],
+  "author": "Abhilash Mandula",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.8.2",
+    "stripe": "^12.0.0",
+    "razorpay": "^2.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "peerDependencies": {
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0"
+  }
+}
