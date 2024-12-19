@@ -21,7 +21,7 @@ const walletSchema = new mongoose.Schema(
       },
     ],
   },
-  { timestamps: true }
+  { timestamps: true, collection: "vd_wallets" }
 );
 
 export const WalletModel = mongoose.model("Wallet", walletSchema);

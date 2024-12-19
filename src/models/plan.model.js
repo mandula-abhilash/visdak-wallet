@@ -37,7 +37,7 @@ const planSchema = new mongoose.Schema(
       default: true,
     },
   },
-  { timestamps: true }
+  { timestamps: true, collection: "vd_wallet_plans" }
 );
 
 planSchema.index({ type: 1, region: 1, isActive: 1 });

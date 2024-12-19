@@ -29,7 +29,7 @@ const subscriptionSchema = new mongoose.Schema(
       default: false,
     },
   },
-  { timestamps: true }
+  { timestamps: true, collection: "vd_wallet_subscriptions" }
 );
 
 subscriptionSchema.index({ userId: 1, isActive: 1 });

@@ -42,7 +42,7 @@ const transactionSchema = new mongoose.Schema(
     },
     metadata: { type: Object },
   },
-  { timestamps: true }
+  { timestamps: true, collection: "vd_wallet_transactions" }
 );
 
 transactionSchema.index({ userId: 1, status: 1 });
