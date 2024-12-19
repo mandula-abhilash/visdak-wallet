@@ -44,7 +44,7 @@ const visdakWalletRoutes = (middleware) => ({
 });
 
 // Log success message for debugging (optional)
-console.log("Environment variables loaded successfully!");
+console.log("Wallet : Environment variables loaded successfully!");
 
 export { handleStripeWebhook };
 export default visdakWalletRoutes;
