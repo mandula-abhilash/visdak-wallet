@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import planRoutes from "./routes/plan.routes.js";
 import walletRoutes from "./routes/wallet.routes.js";
 import subscriptionRoutes from "./routes/subscription.routes.js";
