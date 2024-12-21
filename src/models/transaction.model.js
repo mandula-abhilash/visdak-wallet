@@ -32,7 +32,7 @@ const transactionSchema = new mongoose.Schema(
     },
     paymentGateway: {
       type: String,
-      enum: ["stripe", "razorpay"],
+      enum: ["stripe", "razorpay", "system"],
       required: true,
     },
     status: {
