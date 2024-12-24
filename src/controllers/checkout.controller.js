@@ -74,8 +74,12 @@ export const verifySession = async (req, res) => {
     res.json({
       status: session.status,
       paymentStatus: session.payment_status,
-      planId: session.metadata.planId,
-      type: session.metadata.type,
+      metadata: {
+        type: session.metadata.type,
+        name: session.metadata.name,
+        tokens: session.metadata.tokens,
+        planId: session.metadata.planId,
+      },
     });
   } catch (error) {
     console.error("Error verifying session:", error);
