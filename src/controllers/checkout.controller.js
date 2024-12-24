@@ -41,6 +41,8 @@ export const createCheckoutSession = async (req, res) => {
         userId: req.user.userId,
         planId: plan._id.toString(),
         type: plan.type,
+        name: plan.name,
+        tokens: plan.tokens.toString(),
       },
     });
 
